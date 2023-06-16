@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Sign in";
+}
+
+@using WebReport.Models
+@model LoginScreenModel
+
+<form asp-controller="Account" asp-action="Login" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card text-center card  bg-default mb-3">
+                    <div class="card-header">
+                        LOGIN
+                    </div>
+                    <div class="card-body">
+                        <select asp-for="EmployeeId" class="form-control" asp-items="Model.Employees"></select>
+                        </br>
+                        <input type="password" class="form-control input-sm chat-input" placeholder="Password" />
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button type="submit">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
