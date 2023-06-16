@@ -18,7 +18,7 @@ This example shows how you can implement connection filtering in an application,
 
 ### Configure a Database
 
-1. This example uses an SQL file ([instnwnd.sql](https://github.com/microsoft/sql-server-samples/blob/master/samples/databases/northwind-pubs/instnwnd.sql)). Execute it to recreate a database on your side. Do not forget to update the connection string in the [appsettings.json](./WebReportInterceptors/appsettings.json), [ReportDbContext.cs](./WebReportInterceptors/Data/ReportDbContext.cs) and [Startup.cs](./WebReportInterceptors/Program.cs) files to make it valid in your environment.
+1. This example uses an SQL file ([instnwnd.sql](https://github.com/microsoft/sql-server-samples/blob/master/samples/databases/northwind-pubs/instnwnd.sql)). Execute it to recreate a database on your side. Do not forget to update the connection string in the [appsettings.json](./WebReportInterceptors/appsettings.json)and [Startup.cs](./WebReportInterceptors/Program.cs) files to make it valid in your environment.
 
 2. Execute the script below to configure the execution context to control access to rows in a database table. This script does the following:
 
@@ -29,7 +29,7 @@ This example shows how you can implement connection filtering in an application,
 CREATE SCHEMA Security;
 GO
 
-CREATE FUNCTION Security.fn_securitypredicate(@EmployeeId int)
+CREATE FUNCTION Security.fn_securitypredicate(@EmployeeId int) 
     RETURNS TABLE
     WITH SCHEMABINDING
 AS
