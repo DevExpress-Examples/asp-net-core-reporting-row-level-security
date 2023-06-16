@@ -7,6 +7,13 @@
 
 This example shows how you can implement connection filtering in an application, where users share the same application. The application sets the current user ID in [SESSION_CONTEXT](https://learn.microsoft.com/en-us/sql/t-sql/functions/session-context-transact-sql?view=sql-server-ver16&viewFallbackFrom=sql-server-ver16) after connecting to the database, and then security policies filter rows that shouldn't be visible to this ID.
 
+## Files to Review
+
+- [RLSConnectionInterceptor.cs](./WebReportInterceptors/Services/RLSConnectionInterceptor.cs)
+- [Program.cs](./WebReportInterceptors/Program.cs)
+- [AccountController.cs](./WebReportInterceptors/Controllers/AccountController.cs)
+- [Login.cshtml](./WebReportInterceptors/Views/Account/Login.cshtml)
+
 ## Example Overview
 
 ### Configure a Database
@@ -63,10 +70,8 @@ When you run the application, the registration form ([Login.cshtml](./WebReportI
 
 ![Report](./Images/Report.png)
 
-## Files to Review
+## More examples 
 
-- [RLSConnectionInterceptor.cs](./WebReportInterceptors/Services/RLSConnectionInterceptor.cs)
-- [Program.cs](./WebReportInterceptors/Program.cs)
-- [AccountController.cs](./WebReportInterceptors/Controllers/AccountController.cs)
-- [Login.cshtml](./WebReportInterceptors/Views/Account/Login.cshtml)
+[Reporting for WinForms - Override the Default Isolation Level](https://github.com/DevExpress-Examples/winforms-reporting-interceptors)
+
 
