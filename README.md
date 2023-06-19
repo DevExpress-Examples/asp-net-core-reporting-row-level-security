@@ -46,18 +46,6 @@ CREATE SECURITY POLICY Security.OrdersFilter
 GO
 ```
 
-Use the following script to clean up database resources:
-
-```sql
-DROP SECURITY POLICY Security.OrdersFilter;
-
---DROP TABLE Orders;
-
-DROP FUNCTION Security.fn_securitypredicate;
-
-DROP SCHEMA Security;
-```
-
 ### Configure the `IDBConnectionInterceptor` Object 
 
 Create a `IDBConnectionInterceptor` object ([RLSConnectionInterceptor.cs](./WebReportInterceptors/Services/RLSConnectionInterceptor.cs) in this example) to set the current user ID in SESSION_CONTEXT after opening a connection and simulate the connection filtering by selecting from the _Orders_ table after setting different user IDs in SESSION_CONTEXT.
