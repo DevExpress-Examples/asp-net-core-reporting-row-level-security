@@ -2,7 +2,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1172357)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Reporting for ASP NET.Core - Implement Row-Level Security 
+# Reporting for ASP.NET Core - Implement Row-Level Security 
 
 This example shows how you can implement connection filtering in an application, where users share the same application. The application sets the current user ID in [SESSION_CONTEXT](https://learn.microsoft.com/en-us/sql/t-sql/functions/session-context-transact-sql?view=sql-server-ver16&viewFallbackFrom=sql-server-ver16) after connecting to the database, and then security policies filter rows that shouldn't be visible to this ID.
 
