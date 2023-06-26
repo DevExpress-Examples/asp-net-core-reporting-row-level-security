@@ -47,8 +47,7 @@ GO
 
 ### Configure the `IDBConnectionInterceptor` Object 
 
-Create an `IDBConnectionInterceptor` object ([RLSConnectionInterceptor.cs](./WebReportInterceptors/Services/RLSConnectionInterceptor.cs) in this example). During initialization, store the current user ID in SESSION_CONTEXT. Once the database connection opens, select rows from the _Orders_ table as needed.
-
+Create an `IDBConnectionInterceptor` object ([RLSConnectionInterceptor.cs](./WebReportInterceptors/Services/RLSConnectionInterceptor.cs) in this example). When the database connection opens, store the current user ID in SESSION_CONTEXT. Modify queries to the _Order_ table - filter data by user ID. This way you implement database behavior equivalent to connection filtering.
 Register `RLSConnectionInterceptor` as an extension in `IServiceCollection`.
 
 ### Run the Application
@@ -60,5 +59,3 @@ When you run the application, the registration form ([Login.cshtml](./WebReportI
 ## More examples 
 
 [Reporting for WinForms - Override the Default Isolation Level](https://github.com/DevExpress-Examples/winforms-reporting-interceptors)
-
-
