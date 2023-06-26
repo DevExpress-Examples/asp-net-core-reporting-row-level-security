@@ -59,3 +59,8 @@ When you run the application, the registration form ([Login.cshtml](./WebReportI
 ## More examples 
 
 [Reporting for WinForms - Override the Default Isolation Level](https://github.com/DevExpress-Examples/winforms-reporting-interceptors)
+
+##  Documentation 
+
+* [IDBConnectionInterceptor](https://docs.devexpress.com/CoreLibraries/DevExpress.DataAccess.Sql.IDBConnectionInterceptor)
+* [IDBCommandInterceptor](https://docs.devexpress.com/CoreLibraries/DevExpress.DataAccess.Sql.IDBCommandInterceptor)
