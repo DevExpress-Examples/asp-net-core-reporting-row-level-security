@@ -64,4 +64,3 @@ When you run the application, a registration form ([Login.cshtml](./WebReportInt
 - [Program.cs](./WebReportInterceptors/Program.cs)
 - [AccountController.cs](./WebReportInterceptors/Controllers/AccountController.cs)
 - [Login.cshtml](./WebReportInterceptors/Views/Account/Login.cshtml)
-
