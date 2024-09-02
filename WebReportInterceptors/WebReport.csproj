@@ -1,6 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <DefaultItemExcludes>Reports\**</DefaultItemExcludes>
   </PropertyGroup>
   <ItemGroup>
@@ -25,8 +26,7 @@
     <Exec Command="npm install" />
   </Target>
   <ItemGroup>
-    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="23.1.*-*" />
-
+    <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="24.2.*-*" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
